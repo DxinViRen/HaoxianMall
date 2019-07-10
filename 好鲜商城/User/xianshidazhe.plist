@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>caomeiz</string>
+		<key>goodName</key>
+		<string>新鲜草莓限时七折</string>
+		<key>goodPrNum</key>
+		<string>34</string>
+		<key>praice</key>
+		<string>23.8</string>
+		<key>goodDetail</key>
+		<string>草莓营养价值丰富，被誉为是“水果皇后”，含有丰富的维生素C、维生素A、维生素E、维生素PP、维生素B1、维生素B2、胡萝卜素、鞣酸、天冬氨酸、铜、草莓胺、果胶、纤维素、叶酸、铁、钙、鞣花酸与花青素等营养物质。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>heizi</string>
+		<key>goodName</key>
+		<string>新上架黑紫瓜限时八折</string>
+		<key>goodPrNum</key>
+		<string>60</string>
+		<key>praice</key>
+		<string>48</string>
+		<key>goodDetail</key>
+		<string>小坚果宽倒卵形或圆卵形，双凸状，长1毫米，宽0.6毫米，黑色而微紫，有光泽，小，平滑；花柱基小，近于短圆锥形，基部两侧微向上反转，长为小坚果1/5-1/4，宽为小坚果的1/7-1/4，苍白色。花果期1-4月。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>tao</string>
+		<key>goodName</key>
+		<string>鲜嫩水蜜桃限时9折</string>
+		<key>goodPrNum</key>
+		<string>56</string>
+		<key>praice</key>
+		<string>50.4</string>
+		<key>goodDetail</key>
+		<string>桃子素有“寿桃”和“仙桃”的美称，因其肉质鲜美，又被称为“天下第一果”。桃肉含蛋白质、脂肪、碳水化合物、粗纤维、钙、磷、铁、胡萝卜素、维生素B1、以及有机酸（主要是苹果酸和柠檬酸）、糖分（主要是葡萄糖、果糖、蔗糖、木糖）和挥发油</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>xihongs</string>
+		<key>goodName</key>
+		<string>小番茄打折促销</string>
+		<key>goodPrNum</key>
+		<string>56</string>
+		<key>praice</key>
+		<string>50.4</string>
+		<key>goodDetail</key>
+		<string>圣女果具有生津止渴、健胃消食、清热解毒、凉血平肝，补血养血和增进食欲的功效。可治口渴，食欲不振。
+经常食用圣女果能起到促进小儿的生长发育作用；还可增强人体抵抗力、延缓衰老等。圣女果还可以当做美容水果，具有减少皱纹的作用。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>sangshen</string>
+		<key>goodName</key>
+		<string>正宗山东老桑葚，甜甜甜！1</string>
+		<key>goodPrNum</key>
+		<string>56</string>
+		<key>praice</key>
+		<string>45</string>
+		<key>goodDetail</key>
+		<string>抗氧化作用：桑葚中所含的桑葚多糖其对羟基自由基和超氧负离子自由基具有清除作用，阻断自由基反应链，具有一定的抗氧化及防衰老作用，桑葚的提取物具有含量丰富的酚类物质和色素，能显著提高抗氧化酶活性，具有延缓衰老过程中记忆力衰退的功能。</string>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>yingtao</string>
+		<key>goodName</key>
+		<string>来自烟台樱桃，大补。五折促销</string>
+		<key>goodPrNum</key>
+		<string>100</string>
+		<key>praice</key>
+		<string>50</string>
+		<key>goodDetail</key>
+		<string>樱桃可以缓解贫血。铁是合成人体血红蛋白的原料，对于女性来说，有着极为重要的意义。世界卫生组织的调查表明，大约有50%的女童、20%的成年女性、40%的孕妇会发生缺铁性贫血。
+另外，樱桃虽好，但也注意不要多吃。</string>
+	</dict>
+</array>
+</plist>

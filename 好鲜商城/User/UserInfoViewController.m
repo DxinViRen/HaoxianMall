@@ -10,6 +10,7 @@
 #import "GooddModel.h"
 #import "UserHeadCell.h"
 #import "ListItemCell.h"
+#import "AboutUsVC.h"
 @interface UserInfoViewController ()
 
 @end
@@ -33,11 +34,27 @@
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object
 {
     Dx_SectionController *dxs = [[Dx_SectionController alloc]init];
+    NSInteger sec = [self.dataArray indexOfObject:object];
     dxs.configCellBlock = ^(id  _Nonnull model, NSInteger index, UICollectionViewCell * _Nonnull cell) {
         
     };
     dxs.cellDidClickBlock = ^(id  _Nonnull model, NSInteger index) {
-        
+        if(sec == 1)
+        {
+            if(index == 0)
+            {
+                //客服电话
+                NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"telprompt://%@",@"06325020183"];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+                
+            }
+            else if (index == 1)
+            {
+                //关于我们
+                AboutUsVC *abc = [[AboutUsVC alloc]init];
+                [self.navigationController pushViewController:abc animated:YES];
+            }
+        }
     };
     
     return dxs;
@@ -58,8 +75,14 @@
     itemmodel.goodName = @"客服电话:0632-5020183";
     itemmodel.cellHeight = 55;
     
+    GooddModel *itemmodel2 = [[GooddModel alloc]init];
+    itemmodel2.cellName = NSStringFromClass([ListItemCell class]);
+    itemmodel2.cellWight = ScrW;
+    itemmodel2.goodName = @"关于我们";
+    itemmodel2.cellHeight = 55;
     
-    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:itemmodel, nil];
+    
+    NSMutableArray *arr2 = [NSMutableArray arrayWithObjects:itemmodel, itemmodel2,nil];
     SectionSeporModel *secMOdel2 = [[SectionSeporModel alloc]initWithArray:arr2];
     
     

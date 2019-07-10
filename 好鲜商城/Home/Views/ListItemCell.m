@@ -11,7 +11,7 @@
 
 @interface ListItemCell ()
 @property (nonatomic,strong)UILabel *dTitileLabel;
-
+@property (nonatomic,strong)UIView  *downLineView;
 @end
 
 
@@ -43,6 +43,7 @@
     [self.contentView addSubview:self.dTitileLabel];
     self.backgroundColor = [UIColor whiteColor];
     self.contentView.backgroundColor = [UIColor whiteColor];
+    [self.contentView addSubview:self.downLineView];
 }
 
 - (void)layoutSubviews
@@ -52,6 +53,13 @@
         make.centerY.equalTo(self.contentView);
         make.left.equalTo(self.contentView).inset(15.0f);
         make.height.mas_equalTo(20.0f);
+    }];
+    
+    [self.downLineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
+        make.height.mas_equalTo(1);
+        make.right.equalTo(self.contentView);
     }];
 }
 
@@ -67,5 +75,16 @@
         [_dTitileLabel sizeToFit];
     }
     return _dTitileLabel;
+}
+
+- (UIView *)downLineView
+{
+    if(!_downLineView)
+    {
+        _downLineView = [[UIView alloc]init];
+        _downLineView.backgroundColor = [UIColor colorWithHexString:@"999999"];
+
+    }
+    return _downLineView;
 }
 @end

@@ -45,6 +45,8 @@
 		D80E38E122C87F180059DD17 /* HoScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38DF22C87F180059DD17 /* HoScrollCell.xib */; };
 		D80E38E522C8812D0059DD17 /* HomeSCHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */; };
 		D80E38E622C8812D0059DD17 /* HomeSCHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */; };
+		D84ACEDC22D64451004321E3 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D84ACEDA22D64451004321E3 /* AboutUsVC.m */; };
+		D84ACEDD22D64451004321E3 /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84ACEDB22D64451004321E3 /* AboutUsVC.xib */; };
 		D871B1EF22C88FFF00560E94 /* HomeIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D871B1EE22C88FFF00560E94 /* HomeIndexModel.m */; };
 		D871B1F222C9F3A400560E94 /* HomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D871B1F122C9F3A400560E94 /* HomeMenuItem.m */; };
 		D871B1F622CA024000560E94 /* GoodsDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D871B1F422CA024000560E94 /* GoodsDetailVC.m */; };
@@ -190,6 +192,9 @@
 		D80E38E222C8812D0059DD17 /* HomeSCHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSCHeadCell.h; sourceTree = "<group>"; };
 		D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSCHeadCell.m; sourceTree = "<group>"; };
 		D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSCHeadCell.xib; sourceTree = "<group>"; };
+		D84ACED922D64451004321E3 /* AboutUsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
+		D84ACEDA22D64451004321E3 /* AboutUsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsVC.m; sourceTree = "<group>"; };
+		D84ACEDB22D64451004321E3 /* AboutUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
 		D871B1ED22C88FFF00560E94 /* HomeIndexModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeIndexModel.h; sourceTree = "<group>"; };
 		D871B1EE22C88FFF00560E94 /* HomeIndexModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeIndexModel.m; sourceTree = "<group>"; };
 		D871B1F022C9F3A400560E94 /* HomeMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeMenuItem.h; sourceTree = "<group>"; };
@@ -420,6 +425,9 @@
 			children = (
 				D80E388322C58AB70059DD17 /* UserInfoViewController.h */,
 				D80E388422C58AB70059DD17 /* UserInfoViewController.m */,
+				D84ACED922D64451004321E3 /* AboutUsVC.h */,
+				D84ACEDA22D64451004321E3 /* AboutUsVC.m */,
+				D84ACEDB22D64451004321E3 /* AboutUsVC.xib */,
 				D871B26822D5CAA100560E94 /* LoginViewController.h */,
 				D871B26922D5CAA100560E94 /* LoginViewController.m */,
 				D871B26A22D5CAA100560E94 /* LoginViewController.xib */,
@@ -700,6 +708,7 @@
 				D871B21422CB421E00560E94 /* tejiashuiguo.plist in Resources */,
 				D80E384F22C4E3D20059DD17 /* Assets.xcassets in Resources */,
 				D80E384D22C4E3D10059DD17 /* Main.storyboard in Resources */,
+				D84ACEDD22D64451004321E3 /* AboutUsVC.xib in Resources */,
 				D871B26222D5B9B600560E94 /* qiandao.png in Resources */,
 				D80E38E122C87F180059DD17 /* HoScrollCell.xib in Resources */,
 			);
@@ -757,6 +766,7 @@
 				D80E38CA22C8564C0059DD17 /* HomeSectionHFCell.m in Sources */,
 				D871B24A22D556A100560E94 /* MakeupCell.m in Sources */,
 				D871B24522D4BA1400560E94 /* OrderDetailCell.m in Sources */,
+				D84ACEDC22D64451004321E3 /* AboutUsVC.m in Sources */,
 				D871B1FF22CA50A900560E94 /* GooddModel.m in Sources */,
 				D80E389422C5F2D50059DD17 /* UIColor+QCategory.m in Sources */,
 				D871B26B22D5CAA100560E94 /* LoginViewController.m in Sources */,

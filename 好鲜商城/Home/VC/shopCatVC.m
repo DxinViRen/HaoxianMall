@@ -25,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self configData];
+    self.title = @"购物车";
     self.mainCollectionView.emptyDataSetSource = self;
     self.mainCollectionView.emptyDataSetDelegate = self;
     UIWindow *win = [UIApplication sharedApplication].keyWindow;
@@ -36,10 +37,37 @@
     }];
 }
 
-- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+
+- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
 {
-    UIImage *image = [UIImage imageNamed:@"shopCartkong"];
-    return image;
+    UIView *view = [[UIView alloc]init];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(300);
+    }];
+    
+    UIImageView *mainImageView = [[UIImageView alloc]init];
+    mainImageView.image = [UIImage imageNamed:@"shopCartkong"];
+    [view addSubview:mainImageView];
+    [mainImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(view).inset(20);
+        make.centerX.equalTo(view);
+        make.size.mas_equalTo(CGSizeMake(176, 160));
+    }];
+   
+    UILabel *label = [[UILabel alloc]init];
+    label.font  = [UIFont fontWithName:ThemeFont size:15];
+    label.text = @"您的购物车空空如也，快去添加商品吧";
+    label.textColor = [UIColor colorWithHexString:@"#999999"];
+    label.textAlignment = NSTextAlignmentCenter;
+    [label sizeToFit];
+    [view addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(mainImageView.mas_bottom).offset(15);
+        make.height.mas_equalTo(20);
+        make.centerX.equalTo(view);
+    }];
+    return view;
 }
 - (void)viewDidLayoutSubviews
 {
@@ -53,14 +81,17 @@
     [super viewDidAppear:animated];
     [self.adapter reloadDataWithCompletion:nil];
     [self setShopOpViewPrice];
-    self.shOpView.hidden = NO;
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self configData];
+    [self configOptionViewHidden];
 }
+
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -100,6 +131,14 @@
     };
     
     return dxc;
+}
+
+
+#pragma mark - 底部OptionView 的c显示隐藏
+- (void)configOptionViewHidden
+{
+    SectionSeporModel *model= self.dataArray[0];
+    self.shOpView.hidden = model.dataArray.count==0;
 }
 
 //置全选
@@ -179,7 +218,6 @@
 {
     CGFloat tot = [self caluPrice];
     self.shOpView.currentBill.text = [NSString stringWithFormat:@"￥%.2f",tot];
-    self.shOpView.hidden = !(self.dataArray.count>0);
 }
 
 #pragma mark - shopCarOptionDelegate
@@ -213,7 +251,7 @@
     if([self checkModelArray].count == 0)
     {
         //提示没有商品
-        UIAlertController *alc = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"没有要结算的商品" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alc = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"您没有勾选任何商品" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *ac = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
         }];

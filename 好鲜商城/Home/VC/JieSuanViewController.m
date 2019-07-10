@@ -29,12 +29,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self configData];
+    self.navigationItem.hidesBackButton = YES;
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(makeupOrderAction:) name:NoitificationMakeUpOrder object:nil];
     self.connect = nil;
     self.adress = nil;
     self.title = @"订单";
+    UIButton *cancel = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 40)];
+    [cancel setTitle:@"取消订单" forState:UIControlStateNormal];
+    [cancel setTitleColor:[UIColor colorWithHexString:@"#666666"] forState:UIControlStateNormal];
+    [cancel addTarget:self action:@selector(cancelOrder:) forControlEvents:UIControlEventTouchUpInside];
+    cancel.titleLabel.font  = [UIFont fontWithName:ThemeFont size:13];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:cancel];
+    self.navigationItem.rightBarButtonItem = item;
+    
 }
 
+
+- (void)cancelOrder:(UIButton *)btn
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 
 - (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter
 {

@@ -107,7 +107,7 @@
 {
     CGFloat total = 0;
     for (GooddModel *model in self.checkArray) {
-        total += [model.praice floatValue];
+        total += [model.praice floatValue] *model.goodNum;
     }
     
     GooddModel *cellModel = [[GooddModel alloc]init];

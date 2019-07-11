@@ -12,7 +12,6 @@
 		D80E384A22C4E3D10059DD17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E384922C4E3D10059DD17 /* ViewController.m */; };
 		D80E384D22C4E3D10059DD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80E384B22C4E3D10059DD17 /* Main.storyboard */; };
 		D80E384F22C4E3D20059DD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80E384E22C4E3D20059DD17 /* Assets.xcassets */; };
-		D80E385222C4E3D20059DD17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80E385022C4E3D20059DD17 /* LaunchScreen.storyboard */; };
 		D80E385522C4E3D20059DD17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E385422C4E3D20059DD17 /* main.m */; };
 		D80E385F22C4E3D20059DD17 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E385E22C4E3D20059DD17 /* ____Tests.m */; };
 		D80E386A22C4E3D20059DD17 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E386922C4E3D20059DD17 /* ____UITests.m */; };
@@ -45,6 +44,7 @@
 		D80E38E122C87F180059DD17 /* HoScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38DF22C87F180059DD17 /* HoScrollCell.xib */; };
 		D80E38E522C8812D0059DD17 /* HomeSCHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */; };
 		D80E38E622C8812D0059DD17 /* HomeSCHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */; };
+		D83678CF22D6C5B800164F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83678CE22D6C5B800164F01 /* LaunchScreen.storyboard */; };
 		D84ACEDC22D64451004321E3 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D84ACEDA22D64451004321E3 /* AboutUsVC.m */; };
 		D84ACEDD22D64451004321E3 /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84ACEDB22D64451004321E3 /* AboutUsVC.xib */; };
 		D871B1EF22C88FFF00560E94 /* HomeIndexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D871B1EE22C88FFF00560E94 /* HomeIndexModel.m */; };
@@ -129,7 +129,6 @@
 		D80E384922C4E3D10059DD17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D80E384C22C4E3D10059DD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D80E384E22C4E3D20059DD17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D80E385122C4E3D20059DD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80E385322C4E3D20059DD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D80E385422C4E3D20059DD17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D80E385A22C4E3D20059DD17 /* 好鲜商城Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "好鲜商城Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +191,7 @@
 		D80E38E222C8812D0059DD17 /* HomeSCHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSCHeadCell.h; sourceTree = "<group>"; };
 		D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSCHeadCell.m; sourceTree = "<group>"; };
 		D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSCHeadCell.xib; sourceTree = "<group>"; };
+		D83678CE22D6C5B800164F01 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84ACED922D64451004321E3 /* AboutUsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
 		D84ACEDA22D64451004321E3 /* AboutUsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsVC.m; sourceTree = "<group>"; };
 		D84ACEDB22D64451004321E3 /* AboutUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutUsVC.xib; sourceTree = "<group>"; };
@@ -333,6 +333,7 @@
 		D80E384422C4E3D10059DD17 /* 好鲜商城 */ = {
 			isa = PBXGroup;
 			children = (
+				D83678CE22D6C5B800164F01 /* LaunchScreen.storyboard */,
 				D80E388722C5AB9C0059DD17 /* WSLRollView.h */,
 				D80E388622C5AB9C0059DD17 /* WSLRollView.m */,
 				D80E384522C4E3D10059DD17 /* AppDelegate.h */,
@@ -363,7 +364,6 @@
 				D871B22A22CF439F00560E94 /* unSelect.png */,
 				D871B22922CF439E00560E94 /* unSelect@3x.png */,
 				D80E384E22C4E3D20059DD17 /* Assets.xcassets */,
-				D80E385022C4E3D20059DD17 /* LaunchScreen.storyboard */,
 				D80E385322C4E3D20059DD17 /* Info.plist */,
 				D80E385422C4E3D20059DD17 /* main.m */,
 				D80E38D722C865140059DD17 /* FrashTools.h */,
@@ -689,7 +689,6 @@
 				D871B22722CEF6EE00560E94 /* ShopList.plist in Resources */,
 				D871B21022CB420100560E94 /* xinxianshucai.plist in Resources */,
 				D871B24622D4BA1400560E94 /* OrderDetailCell.xib in Resources */,
-				D80E385222C4E3D20059DD17 /* LaunchScreen.storyboard in Resources */,
 				D871B24B22D556A100560E94 /* MakeupCell.xib in Resources */,
 				D80E38D622C860910059DD17 /* HomeMenuCell.xib in Resources */,
 				D80E388D22C5DDB70059DD17 /* BannerCell.xib in Resources */,
@@ -706,6 +705,7 @@
 				D871B25C22D5B8FD00560E94 /* minehead.png in Resources */,
 				D871B21222CB420F00560E94 /* xianshidazhe.plist in Resources */,
 				D871B21422CB421E00560E94 /* tejiashuiguo.plist in Resources */,
+				D83678CF22D6C5B800164F01 /* LaunchScreen.storyboard in Resources */,
 				D80E384F22C4E3D20059DD17 /* Assets.xcassets in Resources */,
 				D80E384D22C4E3D10059DD17 /* Main.storyboard in Resources */,
 				D84ACEDD22D64451004321E3 /* AboutUsVC.xib in Resources */,
@@ -852,14 +852,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D80E385022C4E3D20059DD17 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D80E385122C4E3D20059DD17 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -980,6 +972,7 @@
 			baseConfigurationReference = CF1F2B0551CDFD75E517C7D9 /* Pods-好鲜商城.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$SRCROOT/好鲜商城/PcM.pch";
 				INFOPLIST_FILE = "好鲜商城/Info.plist";
@@ -998,6 +991,7 @@
 			baseConfigurationReference = 0404F9F7E83332BB555361BD /* Pods-好鲜商城.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$SRCROOT/好鲜商城/PcM.pch";
 				INFOPLIST_FILE = "好鲜商城/Info.plist";

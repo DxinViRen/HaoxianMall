@@ -97,7 +97,7 @@
         if(section == 1)
         {
             GoodsDetailVC *gdv = [[GoodsDetailVC alloc]init];
-            gdv.model = (GooddModel *)model;
+            gdv.model = [(GooddModel *)model copy];
             [self.navigationController pushViewController:gdv animated:YES];
         }
     };

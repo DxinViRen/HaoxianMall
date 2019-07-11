@@ -31,7 +31,7 @@
     HomeCellModel *mUMOdle = [[HomeCellModel alloc]init];
     mUMOdle.cellName = NSStringFromClass([HomeMenuCell class]);
     NSArray *arr = [@[
-  @{@"img":@"xinxianshuiguo",@"text":@"新鲜水果"},
+  @{@"img":@"xinxianshuiguohjhj",@"text":@"新鲜水果"},
   @{@"img":@"xinxianshucai",@"text":@"新鲜蔬菜"},
   @{@"img":@"xianshidaze",@"text":@"限时打折"},
   @{@"img":@"tejiashuiguo",@"text":@"特价水果"}]  mutableCopy];

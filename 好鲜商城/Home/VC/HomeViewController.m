@@ -34,7 +34,6 @@
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(itemClick:) name:@"tag" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(scrClick:) name:@"btntag" object:nil];
     self.view.backgroundColor  = [UIColor colorWithHexString:@"#F8F8F8"];
-    // [self presentViewController: [LoginViewController new] animated:YES completion:nil];
 }
 
 
@@ -75,9 +74,6 @@
         Dx_SectionController *dxs = [[Dx_SectionController alloc]init];
         NSInteger section = [self.dataArray indexOfObject:object];
         @WeakObj(self);
-        dxs.configCellBlock = ^(id  _Nonnull model, NSInteger index, UICollectionViewCell * _Nonnull cell) {
-            [selfWeak configCellWithModel:model index:index cell:cell section:section];
-        };
         dxs.cellDidClickBlock = ^(id  _Nonnull model, NSInteger index) {
             [selfWeak clickCellSection:section model:model index:index];
         };
@@ -86,21 +82,7 @@
     return nil;
 }
 
-
-
 #pragma mark - private method
-- (void)configCellWithModel:(id<HomeCellModelProtocol>)model index:(NSInteger)index cell:(UICollectionViewCell*)cell section:(NSInteger)section
-{
-    if(section == 0)
-    {
-        if(index == 0)
-        {
-            
-        }
-    }
-    
-}
-
 - (void)clickCellSection:(NSInteger)sec model:(id)model index:(NSInteger)index
 {
    if(sec == 1)

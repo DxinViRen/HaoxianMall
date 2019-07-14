@@ -14,6 +14,7 @@
 #import "HomeViewController.h"
 #import "shopCatVC.h"
 #import "LoginViewController.h"
+#import "NavigationBarHandle/UINavigationBar+handle.h"
 @interface RooController ()
 
 @end
@@ -66,7 +67,7 @@
     //选中状态颜色
     [childController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#f26343"],NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateSelected];
     UINavigationController  *nav = [[UINavigationController alloc] initWithRootViewController:childController];
-    
+    [nav.navigationBar navBarBackGroundColor:[UIColor colorWithHexString:@"#f26343"] image:nil isOpaque:YES];
     
     
     [self addChildViewController:nav];

@@ -28,7 +28,7 @@
     if (self) {
         [self setUI];
         //self.backgroundColor = [UIColor colorWithHexString:@"#FFE0D4"];
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor colorWithHexString:@"#f26343"];
     }
     return self;
 }
@@ -68,7 +68,7 @@
     {
         _allSelectBtn  = [[UIButton alloc]init];
         [_allSelectBtn  setTitle:@"全选" forState:UIControlStateNormal];
-        _allSelectBtn.backgroundColor = [UIColor redColor];;
+        _allSelectBtn.backgroundColor = [UIColor colorWithHexString:@"#f26343"];;
         [_allSelectBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_allSelectBtn addTarget:self action:@selector(allSelectAction:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -82,7 +82,7 @@
     {
         _jiesuanBtn  =[[UIButton alloc]init];
         [_jiesuanBtn setTitle:@"结算" forState:UIControlStateNormal];
-        _jiesuanBtn.backgroundColor = [UIColor redColor];;
+        _jiesuanBtn.backgroundColor = [UIColor colorWithHexString:@"#f26343"];;
         [_jiesuanBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_jiesuanBtn addTarget:self action:@selector(jiesuanAction:) forControlEvents:UIControlEventTouchUpInside];
     }

@@ -58,7 +58,7 @@
     [self.itemTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(selfWeak);
         make.height.equalTo(selfWeak.mas_height).multipliedBy(0.2);
-        make.bottom.equalTo(selfWeak);
+        make.bottom.equalTo(selfWeak).offset(-5);
     }];
 }
 - (void)configItemWithTitle:(NSString *)title img:(NSString *)img

@@ -9,7 +9,7 @@
 #import "HomeMenuCell.h"
 #import "HomeMenuItem.h"
 @interface HomeMenuCell ()
-
+@property (nonatomic,strong)UIView *dwonView;
 
 @end
 
@@ -24,6 +24,19 @@
 }
 
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self.contentView addSubview:self.dwonView];
+    [self.dwonView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView);
+        make.right.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView);
+        make.height.mas_equalTo(0.8);
+    }];
+}
+
+
 - (void)setModel:(id<HomeCellModelProtocol>)model
 {
     _model = model;
@@ -33,15 +46,16 @@
     CGFloat spc = 10.0f;
     CGFloat w   = (ScrW - 30 -spc) * 0.5;
     CGFloat h   =  (self.frame.size.height - 30) * 0.5;
-    CGFloat y = 0;
+    CGFloat y = 10;
     for (int i = 0; i <itemArr.count; i ++) {
         int index = i;
         if(index >1)
         {
             index = index - 2;
-            y = h + 10;
+            y = h + 20;
         }
         HomeMenuItem * item = [[HomeMenuItem alloc]init];
+        item.layer.cornerRadius = 5;
         item.tag = i;
         item.frame = CGRectMake(edg + index * (w +spc),y, w, h);
         [self.contentView addSubview:item];
@@ -61,5 +75,13 @@
 }
 
 
-
+- (UIView *)dwonView
+{
+    if(!_dwonView)
+    {
+        _dwonView = [[UIView alloc]init];
+        _dwonView.backgroundColor  = [UIColor colorWithHexString:@"#EEEEEE"];
+    }
+    return _dwonView;
+}
 @end

@@ -18,26 +18,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-VR-3pE">
-                        <rect key="frame" x="10" y="0.0" width="280" height="200"/>
-                        <color key="backgroundColor" red="1" green="0.8784313725490196" blue="0.83137254901960778" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r8-rf-5sn">
+                        <rect key="frame" x="85" y="54" width="131" height="105"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.71504636341690786" green="0.95686274509803915" blue="0.45614750151191652" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="uqQ-VR-3pE" secondAttribute="bottom" id="UZ7-GP-FgE"/>
-                <constraint firstItem="uqQ-VR-3pE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="cJp-Hs-NPY"/>
-                <constraint firstItem="uqQ-VR-3pE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ptu-uP-Rd9"/>
-                <constraint firstAttribute="trailing" secondItem="uqQ-VR-3pE" secondAttribute="trailing" constant="10" id="yeQ-4o-Eu0"/>
-            </constraints>
             <size key="customSize" width="178" height="189"/>
-            <connections>
-                <outlet property="mainImageView" destination="uqQ-VR-3pE" id="93y-BX-pQi"/>
-            </connections>
-            <point key="canvasLocation" x="10" y="75"/>
+            <point key="canvasLocation" x="-139.13043478260872" y="24.776785714285712"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="test" width="500" height="330"/>
-    </resources>
 </document>

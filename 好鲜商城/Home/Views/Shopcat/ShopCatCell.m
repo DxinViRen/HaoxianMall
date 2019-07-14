@@ -74,12 +74,21 @@
         make.right.lessThanOrEqualTo(selfWeak.opview).offset(5);
     }];
     
+   
     [self.opview mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(selfWeak.goodNameLabel.mas_bottom).offset(20);
         make.right.equalTo(selfWeak.contentView).inset(20);
         make.height.mas_equalTo(30.0f);
         make.width.mas_equalTo(100);
     }];
+    
+    
+    [self.priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(selfWeak.goodNameLabel);
+        make.centerY.equalTo(selfWeak.opview);
+        make.height.mas_equalTo(15);
+    }];
+    
     
     [self.botLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(selfWeak.goodImageView.mas_right);
@@ -103,7 +112,7 @@
     _model = model;
     self.goodImageView.image = [UIImage imageNamed:_model.imageName];
     self.goodNuMlable.text   = _model.goodPrNum;
-    self.priceLabel.text     = _model.praice;
+    self.priceLabel.text     = [NSString stringWithFormat:@"￥%@",_model.praice];
     self.goodNameLabel.text  = _model.goodName;
     self.opview.numLabel.text = [NSString stringWithFormat:@"%ld",_model.goodNum];
     [self setCheckBtnStatus];

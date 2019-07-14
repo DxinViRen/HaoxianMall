@@ -33,7 +33,7 @@
     self.goodListDataSoureArray = @[@"xinxianshuiguo",@"xinxianshucai",@"xianshidazhe",@"xinxianshuiguo"];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(itemClick:) name:@"tag" object:nil];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(scrClick:) name:@"btntag" object:nil];
-    
+    self.view.backgroundColor  = [UIColor colorWithHexString:@"#F8F8F8"];
     // [self presentViewController: [LoginViewController new] animated:YES completion:nil];
 }
 
@@ -103,8 +103,12 @@
 
 - (void)clickCellSection:(NSInteger)sec model:(id)model index:(NSInteger)index
 {
-   
-    
+   if(sec == 1)
+   {
+       GoodsDetailVC *detai = [[GoodsDetailVC alloc]init];
+       detai.model = [model copy];
+       [self.navigationController pushViewController:detai animated:YES];
+   }
 }
 
 

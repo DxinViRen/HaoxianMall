@@ -44,6 +44,7 @@
 		D80E38E122C87F180059DD17 /* HoScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38DF22C87F180059DD17 /* HoScrollCell.xib */; };
 		D80E38E522C8812D0059DD17 /* HomeSCHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */; };
 		D80E38E622C8812D0059DD17 /* HomeSCHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */; };
+		D80EBE7A22DAB872001A95B6 /* UINavigationBar+handle.m in Sources */ = {isa = PBXBuildFile; fileRef = D80EBE7922DAB872001A95B6 /* UINavigationBar+handle.m */; };
 		D83678CF22D6C5B800164F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83678CE22D6C5B800164F01 /* LaunchScreen.storyboard */; };
 		D84ACEDC22D64451004321E3 /* AboutUsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D84ACEDA22D64451004321E3 /* AboutUsVC.m */; };
 		D84ACEDD22D64451004321E3 /* AboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D84ACEDB22D64451004321E3 /* AboutUsVC.xib */; };
@@ -191,6 +192,8 @@
 		D80E38E222C8812D0059DD17 /* HomeSCHeadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeSCHeadCell.h; sourceTree = "<group>"; };
 		D80E38E322C8812D0059DD17 /* HomeSCHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeSCHeadCell.m; sourceTree = "<group>"; };
 		D80E38E422C8812D0059DD17 /* HomeSCHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSCHeadCell.xib; sourceTree = "<group>"; };
+		D80EBE7822DAB872001A95B6 /* UINavigationBar+handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+handle.h"; sourceTree = "<group>"; };
+		D80EBE7922DAB872001A95B6 /* UINavigationBar+handle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+handle.m"; sourceTree = "<group>"; };
 		D83678CE22D6C5B800164F01 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84ACED922D64451004321E3 /* AboutUsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsVC.h; sourceTree = "<group>"; };
 		D84ACEDA22D64451004321E3 /* AboutUsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsVC.m; sourceTree = "<group>"; };
@@ -351,6 +354,7 @@
 				D80E38BE22C8504A0059DD17 /* NSArray+Adpa.h */,
 				D80E38BF22C8504A0059DD17 /* NSArray+Adpa.m */,
 				D80E388922C5DDB70059DD17 /* BannerCell.h */,
+				D80EBE7722DAB872001A95B6 /* NavigationBarHandle */,
 				D80E389222C5F2D50059DD17 /* UIColor+QCategory.h */,
 				D80E389322C5F2D50059DD17 /* UIColor+QCategory.m */,
 				D80E388A22C5DDB70059DD17 /* BannerCell.m */,
@@ -535,6 +539,15 @@
 				D871B25322D5882200560E94 /* GetImageCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D80EBE7722DAB872001A95B6 /* NavigationBarHandle */ = {
+			isa = PBXGroup;
+			children = (
+				D80EBE7822DAB872001A95B6 /* UINavigationBar+handle.h */,
+				D80EBE7922DAB872001A95B6 /* UINavigationBar+handle.m */,
+			);
+			path = NavigationBarHandle;
 			sourceTree = "<group>";
 		};
 		D871B21F22CEE43500560E94 /* Shopcat */ = {
@@ -787,6 +800,7 @@
 				D871B24F22D57D2900560E94 /* MessageVC.m in Sources */,
 				D80E38B222C6FD250059DD17 /* SectionSeptemporModel.m in Sources */,
 				D80E38D522C860910059DD17 /* HomeMenuCell.m in Sources */,
+				D80EBE7A22DAB872001A95B6 /* UINavigationBar+handle.m in Sources */,
 				D80E38E522C8812D0059DD17 /* HomeSCHeadCell.m in Sources */,
 				D80E38DC22C869590059DD17 /* ItemView.m in Sources */,
 				D871B23222CF4E3100560E94 /* ShopCatOptionView.m in Sources */,

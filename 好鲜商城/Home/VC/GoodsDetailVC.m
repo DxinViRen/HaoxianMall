@@ -60,7 +60,7 @@
     
     GooddModel *mode1 = [GooddModel alloc];
     mode1.cellName = NSStringFromClass([GoodDetaiCell class]);
-    mode1.cellHeight = 200;
+    mode1.cellHeight = 400;
     mode1.cellWight = ScrW;
     mode1.goodDetail = self.model.goodDetail;
     NSMutableArray * arr = [NSMutableArray arrayWithObjects:model0,mode1, nil];

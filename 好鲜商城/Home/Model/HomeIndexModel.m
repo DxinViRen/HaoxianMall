@@ -57,7 +57,8 @@
         hModel.goodName  = nameArr[i];
         hModel.goodDetail = deArr[i];
         hModel.goodPrNum = [NSString stringWithFormat:@"%u",(arc4random()%10+30)];
-        hModel.cellHeight = 100;
+        hModel.cellHeight = 120;
+        hModel.cellWight = ScrW;
         hModel.praice = [NSString stringWithFormat:@"%u",(arc4random()%10+20)];
         [mA addObject:hModel];
     }

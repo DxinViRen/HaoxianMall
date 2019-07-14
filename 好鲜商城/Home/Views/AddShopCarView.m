@@ -64,7 +64,7 @@
         _addShopBtn.titleLabel.font = [UIFont fontWithName:ThemeFont size:15];
         [_addShopBtn addTarget:self action:@selector(addShopAction:) forControlEvents:UIControlEventTouchUpInside];
         [_addShopBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _addShopBtn.backgroundColor = [UIColor redColor];
+        _addShopBtn.backgroundColor = [UIColor colorWithHexString:@"#f26343"];
     }
     return _addShopBtn;
 }

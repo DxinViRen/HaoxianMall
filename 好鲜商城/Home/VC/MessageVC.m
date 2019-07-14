@@ -30,7 +30,7 @@
     
     UIButton *cancel = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 80, 40)];
     [cancel setTitle:@"回到首页" forState:UIControlStateNormal];
-    [cancel setTitleColor:[UIColor colorWithHexString:@"#666666"] forState:UIControlStateNormal];
+    [cancel setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
     [cancel addTarget:self action:@selector(cancelOrder:) forControlEvents:UIControlEventTouchUpInside];
     cancel.titleLabel.font  = [UIFont fontWithName:ThemeFont size:13];
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:cancel];

@@ -18,6 +18,7 @@
 #import "GooddModel.h"
 #import "GoodsLIstVC.h"
 #import "LoginViewController.h"
+#import <MJRefresh/MJRefresh.h>
 @interface HomeViewController ()
 @property (nonatomic,strong)NSArray *goodListDataSoureArray;
 @end

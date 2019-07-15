@@ -64,7 +64,7 @@
     if(!_imageView)
     {
         _imageView = [[UIImageView alloc]init];
-        _imageView.image = [UIImage imageNamed:@"logist_havno"];
+        _imageView.image = [UIImage imageNamed:@"logist_havno_op"];
     }
     return _imageView;
 }
@@ -76,7 +76,7 @@
         
         _messageLabel = [[UILabel alloc]init];
         _messageLabel.font  = [UIFont fontWithName:ThemeFont size:15];
-        _messageLabel.textColor = [UIColor colorWithHexString:@"#444444"];
+        _messageLabel.textColor = [UIColor colorWithHexString:@"#f26343"];
         _messageLabel.text = @"您的宝贝正在火速送来，请耐心等待！";
         _messageLabel.textAlignment = NSTextAlignmentCenter;
         [_messageLabel sizeToFit];

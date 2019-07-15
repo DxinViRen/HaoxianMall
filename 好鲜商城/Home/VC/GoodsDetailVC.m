@@ -30,6 +30,8 @@
     self.view.backgroundColor = [UIColor colorWithHexString:@"#FFFFFF"];
     self.title = @"商品详情";
     [self adsView];
+    
+    self.mainCollectionView.frame = CGRectMake(0, 0, ScrW, ScrH -  getRectNavAndStatusHight  - self.navigationController.navigationBar.frame.size.height - 50);
    
 }
 

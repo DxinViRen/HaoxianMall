@@ -6,4 +6,5 @@ pod 'IGListKit'
 pod 'DZNEmptyDataSet'
 pod 'SDCycleScrollView','>= 1.80'
 pod 'MJExtension'
+pod 'MJRefresh'
 end

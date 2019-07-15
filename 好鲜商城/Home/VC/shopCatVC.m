@@ -35,8 +35,58 @@
         make.bottom.equalTo(win).inset(self.tabBarController.tabBar.frame.size.height);
         make.height.mas_equalTo(50.0f);
     }];
+    [self setNavigationBar];
+    
 }
 
+
+//设置navigation
+- (void)setNavigationBar
+{
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 20)];
+    [btn setTitle:@"删除" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(deleteGoods:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    self.navigationItem.rightBarButtonItem =rightItem;
+}
+
+- (void)deleteGoods:(UIButton *)btn
+{
+    SectionSeporModel *secmodel = self.dataArray[0];
+    NSMutableArray *goodArray = secmodel.dataArray;
+    NSMutableArray *cellA = [@[] mutableCopy];
+    NSMutableArray *goodDic =[@[] mutableCopy];
+    for (GooddModel *model in goodArray) {
+        if(model.isCheck){
+            [cellA addObject:model];
+        }
+    }
+    
+    if(cellA.count == 0){
+        UIAlertController *uiac = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"您没有勾选任何商品" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *alAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [uiac addAction:alAction];
+        [self presentViewController:uiac animated:YES completion:nil];
+    }
+    [goodArray removeObjectsInArray:cellA];
+    for (GooddModel *model in goodArray) {
+        NSDictionary *dic = model.mj_keyValues;
+        [goodDic addObject:dic];
+    }
+    
+    [[NSUserDefaults standardUserDefaults]setObject:goodDic forKey:ADDTOSHOPCAT];
+    [[NSUserDefaults standardUserDefaults]synchronize];
+    
+    [self.adapter reloadDataWithCompletion:^(BOOL finished) {
+        if(goodArray.count == 0){
+            self.shOpView.hidden = YES;
+            [self cancelAllCheck];
+        }
+    }];
+}
 
 - (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
 {
@@ -182,7 +232,9 @@
     }
     SectionSeporModel *secModel = [[SectionSeporModel alloc]initWithArray:cellArr];
     self.dataArray  = [NSMutableArray arrayWithObjects:secModel, nil];
-    [self.adapter reloadDataWithCompletion:nil];
+    [self.adapter reloadDataWithCompletion:^(BOOL finished) {
+        self.shOpView.hidden = cellArr.count == 0;
+    }];
 }
     
 
